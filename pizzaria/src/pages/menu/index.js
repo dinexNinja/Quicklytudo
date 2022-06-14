@@ -13,6 +13,9 @@ import pizzanove from "../../images/catupiresa-nova.png"
 import pizzadez from "../../images/atum.png"
 import pizzaonze from "../../images/pizzamm.png"
 import pizzadoze from "../../images/doce-de-leite-com-banana.png"
+import pizzatreze from "../../images/bananabranco.png"
+import pizzaquatorze from "../../images/cheesecake.png"
+import pizzaquinze from "../../images/chocolatebacon.png"
 import Rodape from '../../components/footer'
 import Storage from 'local-storage'
 import { useNavigate } from 'react-router-dom'
@@ -216,6 +219,46 @@ export default function Menu() {
                     <hr className='linha'></hr>
     
                     <p className="ings"> Mussarela, Banana Fatiada, Açúcar, Canela e Doce de leite</p>
+    
+                    <div className="precos"><p className="preco"> R$ 59,90</p></div>
+                </div>
+                </div>
+
+                <div className="cards">
+                
+                <div className="card1">
+                    <img src={pizzatreze} className="pizza"></img>
+    
+                    <p className='sabor'> Pizza de Banana com Chocolate Branco</p>
+    
+                    <hr className='linha'></hr>
+    
+                    <p className="ings"> Mussarela, Banana e Chocolate Branco Caramelizado.</p>
+    
+                    <div className="precos"><p className="preco"> R$ 59,90</p></div>
+                </div>
+    
+                <div className="card1">
+                    <img src={pizzaquatorze} className="pizza"></img>
+    
+                    <p className='sabor'> Pizza de Cheesecake</p>
+    
+                    <hr className='linha'></hr>
+    
+                    <p className="ings"> Cream Cheese, Chocolate Branco Caramelizado, Calda de Frutas Vermelhas.</p>
+    
+                    <div className="precos"><p className="preco"> R$ 59,90</p></div>
+                </div>
+    
+                
+                <div className="card1">
+                    <img src={pizzaquinze} className="pizza"></img>
+    
+                    <p className='sabor'> Pizza de Chocolate Branco com Bacon</p>
+    
+                    <hr className='linha'></hr>
+    
+                    <p className="ings"> Creme de Leite, Chocolate Branco e Bacon.</p>
     
                     <div className="precos"><p className="preco"> R$ 59,90</p></div>
                 </div>
