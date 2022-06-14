@@ -79,7 +79,7 @@
         flex-direction: column;
         align-items: center;
         background-color: #ffffff;
-        border-radius: 0.8em;
+        border-radius: 5px;
         width: 20em;
     }
     .sabor { 
@@ -88,7 +88,7 @@
         text-align: center;
         font-size: 1.1em;
     }
-    
+
     .pizza {
         animation: mymove 5s ease-in-out infinite;
     }
