@@ -16,6 +16,9 @@ import pizzadoze from "../../images/doce-de-leite-com-banana.png"
 import pizzatreze from "../../images/bananabranco.png"
 import pizzaquatorze from "../../images/cheesecake.png"
 import pizzaquinze from "../../images/chocolatebacon.png"
+import pizzadezseis from "../../images/portuguesa.png"
+import pizzadezsete from "../../images/lombiry.png"
+import pizzadezoito from "../../images/palmito.png"
 import Rodape from '../../components/footer'
 import Storage from 'local-storage'
 import { useNavigate } from 'react-router-dom'
@@ -179,6 +182,46 @@ export default function Menu() {
                 <hr className='linha'></hr>
 
                 <p className="ings"> Mussarela, Atum, Orégano e Azeitonas fatiadas</p>
+
+                <div className="precos"><p className="preco"> R$ 49,90</p></div>
+            </div>
+            </div>
+
+            <div className="cards">
+                
+            <div className="card1">
+                <img src={pizzadezseis} className="pizza"></img>
+
+                <p className='sabor'> Pizza Potuguesa</p>
+
+                <hr className='linha'></hr>
+
+                <p className="ings"> Mussarela, Presunto, Azeitona Preta, Ovos Cozidos, Cebola e Orégano.</p>
+
+                <div className="precos"><p className="preco"> R$ 49,90</p></div>
+            </div>
+
+            <div className="card1">
+                <img src={pizzadezsete} className="pizza"></img>
+
+                <p className='sabor'> Pizza Lombiry</p>
+
+                <hr className='linha'></hr>
+
+                <p className="ings"> Mussarela, Lombo Canadense, Catupiry original e Orégano.</p>
+
+                <div className="precos"><p className="preco"> R$ 49,90</p></div>
+            </div>
+
+            
+            <div className="card1">
+                <img src={pizzadezoito} className="pizza"></img>
+
+                <p className='sabor'> Pizza de Palmito</p>
+
+                <hr className='linha'></hr>
+
+                <p className="ings">Mussarela, Palmito, Azeitona Verde e Orégano.</p>
 
                 <div className="precos"><p className="preco"> R$ 49,90</p></div>
             </div>
