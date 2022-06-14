@@ -1,0 +1,371 @@
+.Adm-Page{
+    .voltar{
+        width: 95%;
+        height: fit-content;
+        margin-top: 10px;
+    }
+    .iconsair{
+        filter: opacity(80%);
+        cursor: pointer;
+    }
+    .iconsair:hover{
+        filter: opacity(60%);
+        transition: 500ms;
+    }
+    .busca{
+        border-radius: 100px;
+        background-color: #f8f8f847;
+        height: 40px;
+        display: flex;
+        width: 500px;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 30px;
+    }
+    .lupa {
+        height: 25px;
+        background-color: #f8f8f800;
+        margin-right: 30px;
+        filter: opacity(60%);
+        cursor: pointer;
+    }
+    .lupa:hover {
+       filter: opacity(70%);
+       transition: 500ms; 
+    }
+    .input-busca {
+        border: transparent;
+        color: #3d3d3d;
+        background-color: rgba(255, 255, 255, 0);
+        outline: none;
+        width: 430px;
+        padding: 10px 20px;
+        font-size: 15px;
+        font-family: 'Roboto Condensed', sans-serif ;
+        font-weight: 600;
+        height: 40px;
+        border-top-left-radius: 75px;
+        border-bottom-left-radius: 75px;
+    }
+    .input-busca::placeholder {
+        color: #3d3d3d;
+      }
+    main {
+        background-image: url(../../images/fundo-de-madeira-preto-textura-de-madeira-antiga_88281-3221.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 100vh;
+        width: 100%;
+        overflow-x: hidden;
+        overflow-y: unset;
+    }
+    section {
+        overflow-y: visible;
+        height: fit-content;
+        width: 100vw;
+        display: grid;
+        justify-items: start;
+        grid-template-columns: repeat( 5, max-content);
+    }
+    .card, .card-add {
+        background-color: #f8f8f864;
+        width: 260px;
+        border-radius: 10px;
+        border: 2px solid black;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 3em;
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .card-add {
+        order: -5;
+        height: 40vh;
+    }
+    .adicionar {
+        background-color: transparent;
+        border: transparent;
+        cursor: pointer;
+        filter: opacity(90%);
+    }
+    .adicionar-img:hover {
+        transition: 500ms;
+        filter: opacity(80%);
+    }
+    .modal {
+        position: fixed;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+         display: flex;
+         align-items: center;
+         justify-content: center;
+         background-color: rgba(0, 0, 0, 0.5) ;
+         backdrop-filter: blur(2px);
+         transform: scale(1.1);
+         opacity: 0;
+        visibility: hidden;
+        transition: visibility 0.25s ease-in-out, transform 0.25s ease-in-out, opacity 0.25s ease-in-out;
+    }
+    .modal-contente {
+        background-color: rgba(255, 255, 255, 0.782);
+        padding: 20px 10px;
+        color: black;
+        border-radius: 15px;
+    }
+    .sair {
+        float: right;
+        width: 20px;
+        cursor: pointer;
+        background-color: aliceblue;
+        text-align: center;
+        color: lightgray;
+        line-height: 20px;
+        
+    }
+    .sair:hover {
+        filter: opacity(80%);
+        transition: 200ms;
+        cursor: pointer;
+        background-color: #505050;
+    }
+    .show-modal {
+        opacity: 1;
+        visibility: visible;
+        transform: scale(1.0);
+    }
+    .modal-content{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 20vw;
+        height: fit-content;
+        background-color: #262626e9;
+        padding: 20px;
+        border-radius: 15px;
+        border: 2px solid black;
+    }
+    .div-comanda {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-start;
+        color: white;
+        width: 90%;
+        font-weight: 100;
+    
+    }
+    .h3-comanda {
+        font-family: 'Merienda One', cursive;
+        font-weight: 100;
+        padding: 5px 0;
+    }
+    .h3-comanda-ex {
+        font-weight: 100px;
+        color: #000000d0;
+    }
+    .txt-comanda, .txt-total {
+        outline: transparent;
+        padding: 10px 10px ;
+        background-color: #f8f8f8ab;
+        border: 1px solid black;
+        border-radius: 5px;
+        color: #000000cd;
+        font-family: 'Roboto Condensed', sans-serif;
+        font-weight: 900;
+        font-size: 15px;
+        width: 100%;
+    }
+    .h1-comanda {
+        font-family: 'Merienda One', cursive;
+        text-align: center;
+        color: aliceblue;
+        letter-spacing: 3px;
+        font-weight: 600;
+    }
+    textarea {
+        background-color: #f8f8f8ab;
+        outline: transparent;
+        border: 1px solid #000000cd;
+        border-radius: 5px;
+        width: 100%;
+        font-family: 'Roboto Condensed', sans-serif;
+        padding: 10px;
+        color: rgb(0, 0, 0);
+        font-weight: 900;
+        font-size: 15px;
+        resize: none;
+    }
+    #pedido {
+        margin-top: 30px;
+    }
+    .final-comanda {
+        display: flex;
+        margin-top: 10px;
+        width: 90%;
+    }
+    .txt-total {
+        width: 50%;
+    }
+    .h3-comanda.ex {
+        text-overflow: ellipsis
+    }
+    .concluir {
+        width: 100px;
+        height: 44px;
+        background-color: #3d3d3d;
+        padding: 10px 15px;
+        cursor: pointer;
+        border: 1px solid black;
+        border-radius: 20px;
+        font-size: 15px;
+        font-family: 'Merienda One', cursive;
+        color: white;
+        text-align: center;
+    }
+    #botao-comanda {
+        padding: 5px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-end;
+    }
+    .concluir:hover {
+        background-color: #505050ac;
+        font-size: 14px;
+        transition: 200ms;
+    }
+    .div-comanda-ex {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: stretch;
+        text-align: center;
+        width: 80%;
+        padding: 4px;
+        font-family: 'Merienda One', cursive;
+        font-size: 15px;
+        height: 95%;
+        font-weight: 100;
+    }
+    .icons {
+        margin-top: 5px;
+        padding: 10px;
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    }
+    .img-icon {
+        width: 22px;
+        cursor: pointer;
+    }
+    .div-h1-comanda{
+    width: 100%;
+    }
+    .h1-comanda-ex {
+        height: 33px;
+        font-size: 22px;
+        font-family: 'Merienda One', cursive;
+        font-weight: 600;
+        color: #000;
+        padding-bottom: 20px;
+    }
+    .card {
+        height: min-content;
+    }
+    .bt-icon {
+        background-color: transparent;
+        border: transparent;
+    }
+    .exit {
+        width: 98%;
+        display: flex;
+        justify-content: flex-end;
+        font-family: 'Mochiy Pop One', sans-serif;
+        font-size: 17px;
+        color: grey;
+    }
+    .exit > label:hover {
+        cursor: pointer;
+        color: rgba(128, 128, 128, 0.685);
+    }
+
+
+    @media (max-width: 1280px) {
+
+        .logo-header {
+            width: 90px;
+        }
+        .modal-content {
+            width: 30vw;
+        }
+        .card {
+            width: 210px;
+            height: 300px;
+        }
+        .adicionar-img {
+            width: 50px;
+        }
+        .adicionar-img:hover {
+            width: 55px;
+        }
+    }
+    @media (max-width: 1366px) {
+    
+        .logo{
+            width: 90px;
+        }
+        .modal-content {
+            width: 30vw;
+        }
+        .card {
+            width: 210px;
+            height: 300px;
+        }
+        .adicionar-img {
+            width: 50px;
+        }
+        .adicionar-img:hover {
+            width: 55px;
+        }
+        #link-nav {
+            font-size: 20px;
+        }
+    }
+    @media (max-width: 1440px) {
+    
+        .logo-header {
+            width: 110px;
+        }
+        .modal-content {
+            width: 30vw;
+        }
+        .card {
+            width: 250px;
+            height: 340px;
+        }
+        .adicionar-img {
+            width: 55px;
+        }
+        .adicionar-img:hover {
+            width: 60px;
+        }
+        .a-header {
+            font-size: 25px;
+        }
+        .a-header:hover {
+            font-size: 26px;
+        }
+    }
+    
+    
+    
+
+    
+}

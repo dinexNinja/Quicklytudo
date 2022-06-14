@@ -1,0 +1,506 @@
+.Leanding-Page{
+
+    header {
+        display: flex;
+        flex-direction: row;
+        padding: 0 200px;
+        justify-content: space-between;
+        height: 12vh;
+        align-items: center;
+    }
+    .nav-header {
+        display: flex;
+    }
+    #link-nav {
+        height: fit-content;
+       display: flex;
+       align-items: center;
+       font-family: 'Merienda One', cursive;
+       font-size: 20px;
+       text-decoration: none;
+       margin-left: 2em;
+       background-image: 
+        linear-gradient(
+            transparent 0%,
+            transparent 93%,
+            #505050 90%,
+            #505050 100%
+        );
+        background-repeat: no-repeat;
+        background-size: 0% 100%;
+        background-position-x: center;
+        cursor: pointer;
+        transition: background-size 300ms;
+       ;
+    }
+    .a-header {
+        color: black;
+    }
+    #link-nav:hover {
+        color: #505050;
+        transition: 300ms;
+        background-size: 100% 100%;
+        background-position-x: center;
+    }
+    .sec1 {
+        display: flex;
+        height: 60vh;
+        width: 100%;
+        background-image: url(../../images/zyro-image.png);
+        background-repeat: no-repeat;
+        background-size:cover;
+        background-position: center;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+    }
+    .div-sec1 {
+        height: 80%;
+        width: 650px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+    .div-sec1 > h1 {
+        color: #f8f8f8;
+        font-family: 'Merienda One', cursive;
+        letter-spacing: 1px;
+        font-size: 40px;
+        font-weight: 100;
+    }
+    .div-sec1 > p {
+        color: #f8f8f8;
+        font-family: 'Merienda One', cursive;
+        font-size: 20px;
+    }
+    .sec2 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 40vh;
+    }
+    .div-sec2 > h1 {
+        color: #3d3d3d;
+        font-family: 'Merienda One', cursive;
+        letter-spacing: 1px;
+        font-size: 40px;
+        font-weight: 100;
+        margin-top: 55px;
+    }
+    .img-sec2 {
+        display: flex;
+        justify-content: space-around;
+        width: 70%;
+        padding: 50px;
+    }
+    .img-sec2 > img{
+        cursor: pointer;
+    }
+    .sec3 {
+        background-image: url(../../images/Rectangle.png);
+        height: 70vh;
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        background-attachment: fixed;
+    }
+    .container-sec3 {
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        height: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+    .divider > img {
+        width: 150px;
+    }
+    .p-sec3 {
+        color: white;
+        font-family: 'Leckerli One', cursive;
+        font-size: 25px;
+        width: 630px;
+        text-align: center;
+        font-weight: 100;
+        line-height: 50px;
+        padding: 100px 0;
+    }
+    .sec4 {
+        background-color: #ffffff;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        width: 100%;
+        margin-bottom: 10vh;
+    }
+    .h1-sec4{
+        margin-top: 15vh;
+        margin-bottom: 5vh;
+    }
+    .h1-sec4 > h1 {
+        color: #3d3d3d;
+        font-family: 'Merienda One', cursive;
+        letter-spacing: 1px;
+        font-size: 40px;
+        font-weight: 100;
+        padding: 20px;
+    }
+    .container-sec4 {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        height: 60vh;
+        width: 100%;
+    }
+    .subcontainer-sec4 , .subcontainer2-sec4
+    {
+        margin-top: 2em;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        width: 30%;
+        height: 100%;
+        align-items: center;
+    }
+    
+    .pizza {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 400px;
+        height: 100%;
+        padding: 20px;
+    }
+    .descricao-pizza > h3:hover {
+        color: #3d3d3dd8;
+        cursor: pointer;
+        transition: 100ms;
+    }
+    .descricao-pizza > h3 {
+        font-family: 'Merienda One', cursive;
+        color: #3d3d3d;
+        font-size: 30px;
+        width: 400px;
+    }
+    .descricao-pizza > p {
+        font-family: 'Leckerli One', cursive;
+        color: #3d3d3dc1;
+        font-size: 15px;
+        font-weight: 100;
+        letter-spacing: 1px;
+        width: 300px;
+    }
+    .descricao-pizza{
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+    }
+    .img-pizza {
+        animation: mymove 5s ease-in-out infinite;
+    }
+    .img-pizza:hover {
+        cursor: pointer;
+    }
+    @keyframes mymove {
+        0%{transform: rotate(0deg);}
+        50% {transform: rotate(180deg);}
+        100%{transform: rotate(0deg);}
+    }
+    .cardapio {
+        background-color: transparent;
+        display: flex;
+        justify-content: flex-end;
+        margin-top: 8vh;
+        width: 55%;
+        color: #ffffff;
+    }
+    .a-cardapio {
+        background-color: #3d3d3d;
+        padding: 15px 5px;
+        font-family: 'Merienda One', cursive;
+        font-size: 15px;
+        letter-spacing: 1px;
+        width: 180px;
+        border: transparent;
+        border-radius: 10px;
+        cursor: pointer;
+        text-align: center;
+    }
+    .a-cardapio:hover {
+        background-color: #3d3d3dde;
+        transition: 500ms;
+    }
+    .sec5 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 40vh;
+        background-size: cover;
+        background-position: 110%;
+        background-repeat: no-repeat;
+        background-image: url(../../images/zyro-image.png);
+    }
+    .h1-sec5 {
+        color: #f8f8f8;
+        font-family: 'Merienda One', cursive;
+        letter-spacing: 1px;
+        font-size: 40px;
+        font-weight: 100;
+    }
+    .sec6 {
+        background-color: #fff;
+        width: 100%;
+        height: 40vh;
+    }
+    .container-sec6{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+    }
+    .subcontainer-sec6 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        width: 20%;
+        height: 25%;
+    }
+    .logo-sec6 {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+    .logo-sec6 > h2 {
+        padding: 0 10px;
+        font-family: 'Merienda One', cursive;
+        font-size: 30px;
+        color: rgba(0, 0, 0, 0.934); 
+    }
+    .logo-sec6 > a, .logo-sec6 > p {
+        font-family: 'Leckerli One', cursive;
+        letter-spacing: 1px;
+        color: #3d3d3d;
+        font-size: 16px;
+    }
+   
+    .subcontainer-sec4{
+        margin-right: 60px;
+    }
+    @media (max-width: 1280px) {
+
+        .logo-header {
+            width: 90px;
+        }
+    
+       .sec2 {
+           height: 50vh;
+       } 
+       .p-sec3 {
+           padding: 50px 0;
+       }
+       .descricao-pizza > h3 {
+           font-size: 25px;
+           width: 300px;
+       }
+       .descricao-pizza > p {
+           font-size: 15px;
+           width: 250px;
+       }
+       .subcontainer-sec4, .subcontainer2-sec4 {
+           width: 35%;
+       }
+       .img-pizza {
+           width: 80px;
+       }
+       .cardapio {
+           width: 70%;
+       }
+       .subcontainer-sec6 {
+           width: 25%;
+       }
+    }
+    @media (max-width: 1440px) {
+        .a-header {
+        font-size: 25px;
+        }
+        .a-header:hover {
+        font-size: 26px;
+        }
+        .descricao-pizza > h3 {
+            font-size: 25px;
+            width: 300px;
+        }
+        .descricao-pizza > p {
+            font-size: 15px;
+            width: 250px;
+        }
+        .subcontainer-sec4, .subcontainer2-sec4 {
+            width: 35%;
+        }
+        .img-pizza {
+            width: 80px;
+        }
+        .cardapio {
+            width: 70%;
+        }
+    }
+    
+    
+    @media (max-width:414px) {
+     
+        header {
+            padding: 10px;
+            display: flex;
+            justify-content: center;
+        }
+        .nav-header {
+            padding: 0 0;
+            width: 290px;
+            display: flex;
+            justify-content: center;
+        }
+        .a-header , #link-nav {
+            font-size: 20px;
+        }
+        .logo-header {
+            width: 70px;
+        }
+        .sec1 {
+            width: 100vw;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .div-sec1 {
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+        .div-sec1 > h1 {
+            font-size: 30px;
+        }
+        .div-sec1 > p {
+            font-size: 15px;
+        }
+        .div-sec1 {
+            width: 350px;
+        }
+        .div-sec2 > h1 {
+            font-size: 30px;
+        }
+        .img-sec2 > img {
+            width: 90px;
+        }
+        .sec2 {
+            height: 90vh;
+        }
+        .img-sec2 {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+            padding: 0;
+            height: 40vh;
+        }
+        .sec3 {
+            background-size: cover;
+            background-position: 70% 0%;
+        }
+        .p-sec3 {
+            font-size: 20px;
+            width: 270px;
+            text-align: center;
+        }
+        .h1-sec4 > h1 {
+            font-size: 30px;
+            text-align: center;
+        }
+        .container-sec4 {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 0;
+    
+        }
+        .subcontainer2-sec4, .subcontainer-sec4 {
+            align-items: center;
+            padding: 0;
+            justify-content: center;
+            width: 25%;
+            margin: 0px;
+        }
+        .pizza {
+            width: 300px;
+            padding: 0;
+        }
+        .descricao-pizza > h3 {
+            font-size: 25px;
+            width: 300px;
+        }
+        .descricao-pizza > p {
+            font-size: 15px;
+            width: 200px;
+        }
+        .img-pizza {
+            width: 60px;
+        }
+        .sec4 {
+            width: 100vw;
+            height: 180vh;
+        }
+        .cardapio {
+            justify-content: center;
+        }
+        .sec5 {
+            background-size: cover;
+            background-position: 60%;
+        }
+        .h1-sec5 {
+            font-size: 30px;
+            text-align: center;
+        }
+        .container-sec6 {
+            display: flex;
+            flex-direction: column;        
+        }
+        .logo-sec6 > h2 {
+            font-size: 25px;
+            width: 200px;
+            text-align: center;
+        }
+        .logo-sec6 > img {
+            width: 50px;
+            height: auto;
+        }
+        .logo-sec6 {
+            display: flex;
+            justify-content: center;
+            align-items: flex-end;
+            width: 200px;
+        }
+        .subcontainer-sec6 {
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+        .logo-sec6 > p {
+            width: 200px;
+        }
+    }
+    @media (max-width:1366px){
+        .logo {
+            width: 90px;
+        }
+        .a-header {
+            font-size: 20px;
+        }
+        .sec2 {
+            height: 45vh;
+        }
+    }
+}

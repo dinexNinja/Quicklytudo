@@ -1,0 +1,74 @@
+(1) /POST           /usuario/login
+
+request body
+{
+    "login": "",
+    "senha": ""
+}
+
+response (200)
+{
+    "id": 0,
+    "login": ""
+}
+
+//////////////////////////////////////////////////////////
+
+(2) /POST         /comanda
+
+request body
+{
+    "id": 0,
+    "nome cliente": "",
+    "endereço": "",
+    "contato": "00-00000-0000",
+    "pedido": "",
+    "total": 0.00,
+}
+
+response (200)
+{
+   "id comanda": 0,
+    "nome cliente": "",
+    "endereço": "",
+    "contato": "00-00000-0000",
+    "pedido": "",
+    "total": 0.00,
+}
+
+//////////////////////////////////////////////////////////////
+
+(3) /PUT          /comanda/:id
+
+request body
+{
+    "id": 0,
+    "nome cliente": "",
+    "endereço": "",
+    "contato": "00-00000-0000",
+    "pedido": "",
+    "total": 0.00,
+}
+
+response (204)
+-- sem conteudo
+
+////////////////////////////////////////////////////////////
+
+(4) /DELETE         /comanda/:id
+
+response (204)
+
+///////////////////////////////////////////////////////////
+
+(5) /GET          /comanda/:id 
+
+response (200)
+{
+    "id": 0,
+    "nome cliente": "",
+    "endereço": "",
+    "contato": "00-00000-0000",
+    "pedido": "",
+    "total": 0.00,
+}
