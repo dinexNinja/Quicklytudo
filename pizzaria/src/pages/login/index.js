@@ -1,8 +1,6 @@
 import './index.scss'
 import '../../common/common.scss'
 import logo from '../../images/logo-header.png'
-// eslint-disable-next-line
-import { Link , Navigate} from "react-router-dom";
 import {useState, useRef} from 'react'
 import { useNavigate} from 'react-router-dom'
 import LoadingBar from 'react-top-loading-bar'
@@ -13,7 +11,6 @@ import Storage from 'local-storage'
 
 
 
-// eslint-disable-next-line
 export default function Login() {
     
     
@@ -27,11 +24,13 @@ export default function Login() {
     const ref = useRef();
 
     async function Entrar(){
+
+        
         ref.current.continuousStart()
 
         setCarr(true)
         try{
-            // eslint-disable-next-line
+
             const r = await LoginUser(email, senha);
             Storage('usuario-logado', r)
             
@@ -40,6 +39,8 @@ export default function Login() {
                 navigate('/Adm');
             }, 1000);
             }
+        
+        
             catch (err){
                 setCarr(false)
                 ref.current.complete()
@@ -47,6 +48,7 @@ export default function Login() {
                     setErro(err.response.data.erro);
                 } 
             }
+        
     }
 
     function sairHome(){
