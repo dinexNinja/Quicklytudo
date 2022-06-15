@@ -58,7 +58,7 @@
         flex-direction: column;
         align-items: center;
         height: 100vh;
-        width: 100%;
+        width: 100vw;
         overflow-x: hidden;
         overflow-y: unset;
     }
@@ -74,13 +74,16 @@
         background-color: #f8f8f864;
         width: 260px;
         border-radius: 10px;
-        border: 2px solid black;
+        border: 2px solid rgb(0, 0, 0);
         display: flex;
         justify-content: center;
         align-items: center;
         margin: 3em;
         flex-direction: column;
         padding: 10px;
+    }
+    .card {
+        height: fit-content;
     }
 
     .card-add {
@@ -299,15 +302,12 @@
 
     @media (max-width: 1280px) {
 
-        .logo-header {
-            width: 90px;
-        }
         .modal-content {
             width: 30vw;
         }
         .card {
             width: 210px;
-            height: 300px;
+            height: fit-content;
         }
         .adicionar-img {
             width: 50px;
@@ -326,7 +326,7 @@
         }
         .card {
             width: 210px;
-            height: 300px;
+            height: fit-content;
         }
         .adicionar-img {
             width: 50px;
@@ -339,16 +339,11 @@
         }
     }
     @media (max-width: 1440px) {
-    
-        .logo-header {
-            width: 110px;
-        }
         .modal-content {
             width: 30vw;
         }
-        .card {
-            width: 250px;
-            height: 340px;
+        .card, .card-add {
+            width: 18vw;
         }
         .adicionar-img {
             width: 55px;
@@ -361,6 +356,9 @@
         }
         .a-header:hover {
             font-size: 26px;
+        }
+        section {
+            grid-template-columns: repeat( 4, max-content);
         }
     }
     
