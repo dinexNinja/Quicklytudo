@@ -169,7 +169,8 @@ export default function Menu() {
 
                         <p className="ings"> Calabresa, Catupiry original, Mussarela e Orégano</p>
 
-                        <div className="precos"><p className="preco"> R$ 45,90</p></div>
+                        <div className="precos"><p className="preco"> R$ 45
+                        ,90</p></div>
                     </div>
 
 

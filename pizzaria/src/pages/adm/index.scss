@@ -20,14 +20,16 @@
         width: 500px;
         justify-content: space-between;
         align-items: center;
-        margin-top: 30px;
+        margin-right: 20px;
     }
-    .lupa {
+    .lupa, .lupa-conc {
         height: 25px;
         background-color: #f8f8f800;
-        margin-right: 30px;
         filter: opacity(60%);
         cursor: pointer;
+    }
+    .lupa {
+        margin-right: 20px;
     }
     .lupa:hover {
        filter: opacity(70%);
@@ -81,13 +83,10 @@
         margin: 3em;
         flex-direction: column;
         padding: 10px;
-    }
-    .card {
-        height: fit-content;
+        height: 42vh;
     }
     .card-add {
         order: -5;
-        height: 40vh;
     }
     .adicionar {
         background-color: transparent;
@@ -152,6 +151,21 @@
         padding: 20px;
         border-radius: 15px;
         border: 2px solid black;
+    }
+    .container-concluido{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 10px;
+        background-color: #f8f8f847;
+        border-radius: 30px;
+    }
+    .busca-container {
+        display: flex;
+        width: 100vw;
+        align-items: center;
+        justify-content: center;
+        margin-top: 30px;
     }
     .div-comanda {
         display: flex;
@@ -281,9 +295,6 @@
         color: #000;
         padding-bottom: 20px;
     }
-    .card {
-        height: min-content;
-    }
     .bt-icon {
         background-color: transparent;
         border: transparent;
@@ -307,9 +318,8 @@
         .modal-content {
             width: 30vw;
         }
-        .card {
+        .card, .card-add {
             width: 210px;
-            height: fit-content;
         }
         .adicionar-img {
             width: 50px;
@@ -326,9 +336,8 @@
         .modal-content {
             width: 30vw;
         }
-        .card {
+        .card, .card-add {
             width: 210px;
-            height: fit-content;
         }
         .adicionar-img {
             width: 50px;

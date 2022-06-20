@@ -22,6 +22,9 @@ server.post('/comanda' , async (req, resp) => {
         if(!novaComanda.total){
             throw new Error('Total inválido')
         }
+        if(novaComanda.total < 0) {
+            throw new Error ('O total deve ser maior que R$0')
+        }
        
        
         const comanda = await Adicionar(novaComanda);
@@ -62,7 +65,7 @@ server.put('/comanda/:id', async(req, resp) => {
 
         const resposta = await Alterar(id, comanda)
         if(resposta != 1){
-            throw new Error('Nao foi pussivi')
+            throw new Error('Não foi possível concluir a alteração')
         }
         else {
             resp.status(200).send()
@@ -108,7 +111,7 @@ server.delete('/comanda/:id', async (req, resp) => {
         const resposta = await Remover(id)
 
         if(resposta != 1){
-            throw new Error('deu nao chefe')
+            throw new Error('Não foi possivel deletar a comada')
         }
         else{
         resp.status(204).send();
@@ -125,7 +128,7 @@ server.get('/comanda/busca' , async (req, resp) => {
 
     const resposta = await ListarNome(nome);
     if(!resposta){
-        resp.status(401).send('nao encontramos comandas com esse nome')
+        resp.status(401).send('Nenhuma comanda correspondente foi encontrada')
     }
     else {
         resp.send(resposta)
@@ -142,7 +145,7 @@ server.get('/comanda/:id', async (req, resp) => {
         
         const resposta = await ListarId(id)
         if(!resposta){
-            resp.status(404).send('comanda inexistente')
+            resp.status(404).send('Nenhuma comanda correspondente foi encontrada')
         }
         else {
             resp.send(resposta)

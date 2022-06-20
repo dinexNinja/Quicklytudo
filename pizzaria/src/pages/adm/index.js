@@ -171,10 +171,14 @@ export default function Adm() {
             <LoadingBar color='#f8f8f847' ref={ref} />
             <main>
                     <div className='voltar'><a onClick={sairPag}><img className='iconsair' src={sair} width={30} height={30} /></a></div>
-                    <div className='busca'>
-                        <input className='input-busca' type="text" placeholder='Pesquisar comandas...' value={filtro} onChange={e => setFiltro(e.target.value)} />
-                        <img src={lupa} onClick={Filtrar} className='lupa' />
-                        <img src={lupac} onClick={listarConc} className='lupa' />
+                    <div className='busca-container'>
+                        <div className='busca'>
+                            <input className='input-busca' type="text" placeholder='Pesquisar comandas...' value={filtro} onChange={e => setFiltro(e.target.value)} />
+                            <img src={lupa} onClick={Filtrar} className='lupa' />
+                        </div>
+                        <div className='container-concluido'>
+                                <img src={lupac} onClick={listarConc} className='lupa-conc' />
+                        </div>
                     </div>
                 
 
@@ -188,10 +192,8 @@ export default function Adm() {
                                 <h3 className='h3-comanda-ex' style={{ color: "#3d3d3d" }}>{item.nome}</h3>
                                 <h3 className='h3-comanda-ex' >Endereço:</h3>
                                 <h3 className='h3-comanda-ex' style={{ color: "#3d3d3d" }}>{item.endereco}</h3>
-                                <h3 className='h3-comanda-ex' >Numero:</h3>
+                                <h3 className='h3-comanda-ex' >Contato:</h3>
                                 <h3 className='h3-comanda-ex' style={{ color: "#3d3d3d" }}>{item.contato}</h3>
-                                <h3 className='h3-comanda-ex' >Pedido:</h3>
-                                <h3 className='h3-comanda-ex' style={{ color: "#3d3d3d" }}>{item.pedido}</h3>
                                 <h3 className='h3-comanda-ex' >Total:</h3>
                                 <h3 className='h3-comanda-ex' style={{ color: "#3d3d3d" }}>{item.total}</h3>
                                 <h3 className='h3-comanda-ex' >Situação:</h3>

@@ -18,7 +18,7 @@ INSERT INTO TB_COMANDA (id_admin,nm_cliente, ds_endereco, ds_contato, ds_pedido,
 UPDATE TB_COMANDA
    SET nm_cliente      = 'Matheus',
        ds_endereco     = 'Ali',
-       ds_contato  	   = 99999999,
+       ds_contato  	   = '99999999',
        ds_pedido 	   = 'Frango',
        ds_total 	   = 60.00,
        ds_situacao	   = 'Em Aberto'

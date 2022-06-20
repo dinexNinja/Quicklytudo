@@ -69,7 +69,7 @@ export async function ListarCon(){
        ds_total	 	    total,
        ds_situacao      situacao
   FROM tb_comanda
-  WHERE ds_situacao     = 'CONCLUIDO'
+  WHERE ds_situacao     = 'CONCLUÍDO'
     `
     
     const [resposta] = await con.query(comando)
@@ -115,7 +115,7 @@ export async function Situacao( id){
     const comando =
     `
     UPDATE TB_COMANDA
-   SET ds_situacao     = 'CONCLUIDO'
+   SET ds_situacao     = 'CONCLUÍDO'
  WHERE id_comanda       = ?
     `
     const [resposta] = await con.query(comando, [ id])
