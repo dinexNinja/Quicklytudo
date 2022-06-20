@@ -116,7 +116,7 @@ export default function Menu() {
 
                         <p className="ings"> Mussarela, Pepperoni, Champignon e Azeitonas fatiadas</p>
 
-                        <div className="precos"><p className="preco"> R$ 49,90</p></div>
+                        <div className="precos"><p className="preco"> R$ 45,90</p></div>
                     </div>
 
                     <div className="card1">
@@ -169,7 +169,7 @@ export default function Menu() {
 
                         <p className="ings"> Calabresa, Catupiry original, Mussarela e Orégano</p>
 
-                        <div className="precos"><p className="preco"> R$ 49,90</p></div>
+                        <div className="precos"><p className="preco"> R$ 45,90</p></div>
                     </div>
 
 
@@ -182,7 +182,7 @@ export default function Menu() {
 
                         <p className="ings"> Mussarela, Atum, Orégano e Azeitonas fatiadas</p>
 
-                        <div className="precos"><p className="preco"> R$ 49,90</p></div>
+                        <div className="precos"><p className="preco"> R$ 39,90</p></div>
                     </div>
                 </div>
 
