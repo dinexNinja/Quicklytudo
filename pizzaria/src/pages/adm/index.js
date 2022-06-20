@@ -210,7 +210,7 @@ export default function Adm() {
                     )}
 
                     <div className='card-add' >
-                        <button onClick={showModal} class="adicionar"><img class="adicionar-img" src={add} width="60px" height="60px" alt="+" /></button>
+                        <button onClick={showModal} class="adicionar"><img class="adicionar-img" src={add} width="60px" height="auto" alt="+" /></button>
                         <div className="modal" id="modal">
                             <div className="modal-content">
                                 <div className='exit'><label onClick={hideModal}>x</label></div>

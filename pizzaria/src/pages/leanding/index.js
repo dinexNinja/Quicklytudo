@@ -196,7 +196,7 @@ export default function Leanding() {
                         <h2>Instagram</h2>
                     </div>
                     <div class="logo-sec6">
-                        <a a href='https://www.instagram.com/boaventuraxx/P' target={"_blank"} rel="noreferrer">@quicklypizzaria</a>
+                        <a a href='https://www.instagram.com/boaventuraxx/' target={"_blank"} rel="noreferrer">@quicklypizzaria</a>
                     </div>
                 </div>
             
@@ -206,7 +206,7 @@ export default function Leanding() {
                         <h2>Whatsapp</h2>
                     </div>
                     <div className="logo-sec6">
-                        <p>11 93207-7414</p>
+                        <p>11 98783-8531</p>
                     </div>
                 </div>
             </div>

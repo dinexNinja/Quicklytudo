@@ -85,7 +85,6 @@
     .card {
         height: fit-content;
     }
-
     .card-add {
         order: -5;
         height: 40vh;
@@ -268,6 +267,9 @@
         width: 22px;
         cursor: pointer;
     }
+    .img-icon:hover {
+        filter: opacity(70%);
+    }
     .div-h1-comanda{
     width: 100%;
     }
@@ -331,9 +333,6 @@
         .adicionar-img {
             width: 50px;
         }
-        .adicionar-img:hover {
-            width: 55px;
-        }
         #link-nav {
             font-size: 20px;
         }
@@ -347,9 +346,6 @@
         }
         .adicionar-img {
             width: 55px;
-        }
-        .adicionar-img:hover {
-            width: 60px;
         }
         .a-header {
             font-size: 25px;
